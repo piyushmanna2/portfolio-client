@@ -6,7 +6,7 @@ const Projects = () => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch("http://localhost:911/app/projects")
+        fetch("https://api-portfolioweb.vercel.app/app/projects")
             .then(response =>  response.json())
             .then(data => {
                 if (data.status === false) {
