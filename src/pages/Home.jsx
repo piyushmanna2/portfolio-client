@@ -8,7 +8,7 @@ const Home = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-4">
             <div className="lg:flex">
                 <div className="lg:w-8/12">
-                    <p className="text-3xl font-semibold mb-4">Projects</p>
+                    <h1 className="text-3xl font-semibold mb-4">Projects</h1>
                     <div className="lg:flex lg:flex-wrap">
                         <Project />
                     </div>
