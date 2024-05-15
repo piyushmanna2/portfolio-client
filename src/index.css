@@ -10,7 +10,7 @@ body{
     font-family: "Urbanist", sans-serif;
 }
 
-.loader{
+.loader {
     background: #14131a;
     height: 100vh;
     width: 100%;
@@ -19,7 +19,7 @@ body{
     justify-content: center;
 }
 
-.loader-img{
+.loader img {
     width: 100px;
     height: 100px;
 }

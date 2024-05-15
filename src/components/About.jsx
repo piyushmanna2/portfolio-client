@@ -27,7 +27,7 @@ const About = () => {
     <div className="lg:w-full lg:mb-3 mb-3">
       {loading ? (
         <div className="loader">
-          <img src="/loader.gif" alt="loader" className="loader-img" />
+          <img src="/loader.gif" alt="loader" />
         </div>
       ) : error ? (
         <p>{error}</p>
