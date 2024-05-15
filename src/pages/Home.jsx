@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import About from "../components/About";
 import TechStack from "../components/TechStack";
 import Project from "../components/Projects";
-
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 const Home = () => {
 
     const [loading, setLoading] = useState(true);
@@ -20,6 +21,8 @@ const Home = () => {
                 <img src="/loader.gif" alt="loader" />
             </div>
         ) : (
+            <>
+            <Navbar/>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-4">
                 <div className="lg:flex">
                     <div className="lg:w-8/12">
@@ -36,6 +39,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
+            </>
         )
 
     );
