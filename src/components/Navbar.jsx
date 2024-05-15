@@ -28,7 +28,7 @@ const Navbar = () => {
         <span className="ml-3 text-xl hidden sm:hidden md:hidden lg:inline-block">Piyush Manna</span>
       </a>
       <a href="mailto:piyushmanna69@gmail.com">
-      <button className="flex items-center bg-blue-500 hover:bg-blue-600 text-white py-1 px-2 md:px-3 rounded text-sm md:text-base">
+      <button className="flex items-center bg-blue-500 hover:bg-blue-600 text-white py-2 px-2 md:px-3 rounded text-sm md:text-base">
         Contact Me
         <svg
           xmlns="http://www.w3.org/2000/svg"
