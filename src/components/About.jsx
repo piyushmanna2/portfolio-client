@@ -6,7 +6,7 @@ const About = () => {
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        setLoading(true)
+        setLoading(true);
         fetch("https://api-portfolioweb.vercel.app/app/about")
             .then(response => response.json())
             .then((data) => {
@@ -15,27 +15,29 @@ const About = () => {
                 } else {
                     setAbout(data.data[0]);
                 }
+                setLoading(false); 
             })
-            .catch((err) => setError(err.message));
-        setLoading(false)
+            .catch((err) => {
+                setError(err.message);
+                setLoading(false);
+            });
     }, []);
 
     return (
         <div className="lg:w-full lg:mb-3 mb-3">
-        {loading ? (
-            <img src="/loader.gif" alt="loader" className="loader" />
-        ) : (
-            error ? (
-                <p>{error}</p>
+            {loading ? (
+                <img src="/loader.gif" alt="loader" className="loader" />
             ) : (
-                <div className="bg-card-background p-4">
-                    <p className="font-semibold text-2xl">About Me</p>
-                    <p className="font-normal mt-2">{about.about}</p>
-                </div>
-            )
-        )}
-    </div>
-    
+                error ? (
+                    <p>{error}</p>
+                ) : (
+                    <div className="bg-card-background p-4">
+                        <p className="font-semibold text-2xl">About Me</p>
+                        <p className="font-normal mt-2">{about.about}</p>
+                    </div>
+                )
+            )}
+        </div>
     );
 };
 
