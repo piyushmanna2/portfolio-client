@@ -9,3 +9,12 @@ body{
     color: white;
     font-family: "Urbanist", sans-serif;
 }
+
+.loader{
+    background: #14131a;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
