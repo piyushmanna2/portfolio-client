@@ -4,10 +4,8 @@ import { Link } from "react-router-dom";
 const Projects = () => {
   const [project, setProject] = useState([]);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    setLoading(true);
     fetch("https://api-portfolioweb.vercel.app/app/projects")
       .then((response) => response.json())
       .then((data) => {
@@ -17,12 +15,9 @@ const Projects = () => {
         setProject(data.data);
       })
       .catch((err) => setError(err.message));
-    setLoading(false);
   }, []);
 
-  return loading ? (
-    <img src="/loader.gif" alt="loader" className="loader" />
-  ) : (
+  return (
     <div className="lg:w-1/2 mb-4 lg:mb-0 rounded-md">
       {error ? (
         <p>{error}</p>
