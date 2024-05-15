@@ -2,7 +2,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="container mx-auto flex justify-between items-center p-4">
-      <a className="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+      <a className="flex title-font font-medium items-center text-white">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           version="1.1"
