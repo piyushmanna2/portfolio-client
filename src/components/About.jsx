@@ -25,7 +25,7 @@ const About = () => {
         <p>{error}</p>
       ) : (
         <div className="bg-card-background p-4">
-          <p className="font-semibold text-2xl">About Me</p>
+          <h1 className="font-semibold text-2xl">About Me</h1>
           <p className="font-normal mt-2">{about.about}</p>
         </div>
       )}

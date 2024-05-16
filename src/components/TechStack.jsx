@@ -23,7 +23,7 @@ const TechStack = () => {
       {
         (
           <div className="bg-card-background p-4">
-        <p className="font-semibold text-2xl mb-4">What i know</p>
+        <h1 className="font-semibold text-2xl mb-4">What I know</h1>
         {error ? (
           <p>{error}</p>
         ) : (
