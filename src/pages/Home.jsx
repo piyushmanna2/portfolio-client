@@ -4,15 +4,15 @@ import TechStack from "../components/TechStack";
 import Project from "../components/Projects";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SocialMedia from '../components/SocialMedia';
 
 const Home = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        const timeout = setTimeout(() => {
+        setTimeout(() => {
             setLoading(false);
         }, 2000);
-        return () => clearTimeout(timeout);
     }, []);
 
     return (
@@ -36,6 +36,7 @@ const Home = () => {
                                 <div className="lg:flex lg:flex-col">
                                     <About />
                                     <TechStack />
+                                    <SocialMedia/>
                                 </div>
                             </div>
                         </div>
