@@ -28,7 +28,7 @@ const SocialMedia = () => {
             <ul>
             {
                 contacts.map(contact => (
-                <li key={contact._id}>
+                <li key={contact._id} className="mb-2">
                     <Link to={contact.link}>
                       <div className="flex items-center">
                       <span dangerouslySetInnerHTML={{ __html: contact.icon }} />
