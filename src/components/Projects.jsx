@@ -34,7 +34,16 @@ const Projects = () => {
               <h2 className="text-2xl font-semibold text-white">
                 {proj.project_name}
               </h2>
-              <p className="text-sm text-gray-600">{proj.project_techstack}</p>
+              <div className="flex flex-wrap gap-1">
+                {proj.project_techstack.split(',').map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-gray-100 text-gray-800 text-xs mb-1 font-medium px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-300"
+                  >
+                    {tech.trim()}
+                  </span>
+                ))}
+              </div>
               <Link to={proj.project_code}>
                 <button className="flex items-center mt-2 text-sm text-white bg-blue-500 py-1 px-3 rounded-md">
                   View Project
