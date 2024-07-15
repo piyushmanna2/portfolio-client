@@ -18,7 +18,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="lg:w-3/4 mb-4 lg:mb-0 rounded-md flex">
+    <div className="lg:w-1/2 mb-4 lg:mb-0 rounded-md">
       {error ? (
         <p>{error}</p>
       ) : (
