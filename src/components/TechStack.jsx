@@ -6,7 +6,7 @@ const TechStack = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://api-portfolioweb.vercel.app/app/techstack")
+    fetch("http://localhost:4222/app/techstack")
       .then(response => response.json())
       .then((data) => {
         if (data.status === false) {
